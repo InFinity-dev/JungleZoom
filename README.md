@@ -16,3 +16,11 @@ sudo pfctl -vnf /etc/pf.conf
 ```
 python3 app.py
 ```
+
+## https: 관련 브라우저 보안 설정
+설정에 도메인 추가
+
+```
+chrome://flags/#unsafely-treat-insecure-origin-as-securechrome://flags/#unsafely-treat-insecure-origin-as-secure
+```
+
