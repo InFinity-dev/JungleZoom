@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- icon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정글줌</title>
+</head>
+<body>
+
+    <div class="heading mb-4">
+        <h1 class="display-4">정글줌</h1>
+    </div>
+    <div class="container text-center mt-5">
+        <h4>방이름</h4>
+        <p>
+            방이름을 넣으세요
+        </p>
+
+        <form id="room_form" method="POST" class="form shadow" style="max-width:400px; margin-left: auto; margin-right: auto;">
+            <div class="input-group mb-3">
+                <input type="text" name="room_id" id="room_id" class="form-control" placeholder="방 이름을 넣으세요" autofocus required>
+                <div class="invalid-feedback">방이름을 넣으세요.</div>
+                <div class="input-group-append">
+                    <input type="submit" value="방생성" class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+        <img class="roomfit" src="static/dabcat.png" style="border-radius: 30px;width: 300px;height: 300px;" />
+        <p><br>RoomFit에 X를 눌러 조의를 표하세요</p>
+    </div>
+    
+</body>
+</html>
