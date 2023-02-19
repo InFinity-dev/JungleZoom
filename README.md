@@ -21,6 +21,6 @@ python3 app.py
 설정에 도메인 추가
 
 ```
-chrome://flags/#unsafely-treat-insecure-origin-as-securechrome://flags/#unsafely-treat-insecure-origin-as-secure
+chrome://flags/#unsafely-treat-insecure-origin-as-secure
 ```
 
