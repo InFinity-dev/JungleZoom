@@ -3,6 +3,9 @@
 ## Mac OS 방화벽 설정
 ```
 sudo nano /etc/pf.conf
+
+아래 줄 추가
+
 pass in proto tcp from any to any port 7777
 pass in proto udp from any to any port 7777
 ```
